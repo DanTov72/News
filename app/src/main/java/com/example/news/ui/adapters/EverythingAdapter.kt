@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.news.base.BaseDiffUtilItemCallback
-import com.example.news.databinding.ItemEverythingListBinding
 import com.example.news.models.everything.EverythingNewsItem
+import com.example.news20.databinding.ItemEverythingListBinding
 
 class EverythingAdapter :
     ListAdapter<EverythingNewsItem, EverythingAdapter.EverythingViewHolder>(BaseDiffUtilItemCallback()) {

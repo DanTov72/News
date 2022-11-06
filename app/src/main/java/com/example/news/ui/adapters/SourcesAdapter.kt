@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.news.base.BaseDiffUtilItemCallback
-import com.example.news.databinding.ItemSourcesBinding
 import com.example.news.models.sources.SourcesNewItem
+import com.example.news20.databinding.ItemSourcesBinding
 
 class SourcesAdapter :
     ListAdapter<SourcesNewItem, SourcesAdapter.SourcesViewHolder>(BaseDiffUtilItemCallback()) {
