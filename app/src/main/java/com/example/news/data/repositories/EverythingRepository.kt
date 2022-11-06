@@ -4,7 +4,8 @@ import com.example.news.base.BaseRepository
 import com.example.news.data.remote.apiservices.NewsApiServices
 import javax.inject.Inject
 
-class EverythingRepository @Inject constructor(private val service: NewsApiServices): BaseRepository() {
+class EverythingRepository @Inject constructor(private val service: NewsApiServices) :
+    BaseRepository() {
 
     fun fetchEverything() = doRequest {
         service.fetchEverything("bitcoin")

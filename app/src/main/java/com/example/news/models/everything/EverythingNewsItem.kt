@@ -4,8 +4,11 @@ import com.example.news.base.IBaseDiffModel
 import com.google.gson.annotations.SerializedName
 
 data class EverythingNewsItem(
-    @SerializedName("id")
-    override val id: Int,
+
     @SerializedName("title")
-    val tittle: String
+    val tittle: String,
+
+    @SerializedName("id")
+    override val id: Int
+
 ) : IBaseDiffModel<Int>

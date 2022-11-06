@@ -1,19 +1,13 @@
 package com.example.news.ui.fragments.everything
 
-import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.news.R
 import com.example.news.base.BaseFragment
 import com.example.news.common.Resource
-import com.example.news.databinding.FragmentEverythingBinding
 import com.example.news.ui.adapters.EverythingAdapter
+import com.example.news20.R
+import com.example.news20.databinding.FragmentEverythingBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -23,17 +17,16 @@ class EverythingFragment :
     override val viewModel: EverythingViewModel by viewModels()
     private val adapter = EverythingAdapter()
 
-    override fun initialize() {
-        setupRecyclerView()
+    private fun setupRecyclerView() {
+        binding.recyclerView.adapter = adapter
     }
 
     override fun setupSubscribes() {
         subscribesEverything()
     }
 
-
-    private fun setupRecyclerView() {
-        binding.recyclerView.adapter = adapter
+    override fun initialize() {
+        setupRecyclerView()
     }
 
     private fun subscribesEverything() {

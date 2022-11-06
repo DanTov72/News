@@ -3,11 +3,11 @@ package com.example.news.ui.fragments.sources
 import android.util.Log
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.news.R
 import com.example.news.base.BaseFragment
 import com.example.news.common.Resource
-import com.example.news.databinding.FragmentSourcesBinding
 import com.example.news.ui.adapters.SourcesAdapter
+import com.example.news20.R
+import com.example.news20.databinding.FragmentSourcesBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

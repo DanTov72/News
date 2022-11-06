@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    tools:context=".ui.fragments.toparticles.TopArticlesFragment">
+    android:background="@color/purple_500"
+    tools:context="com.example.news.ui.fragments.toparticles.TopArticlesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"

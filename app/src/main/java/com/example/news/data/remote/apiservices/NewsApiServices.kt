@@ -12,18 +12,21 @@ import retrofit2.http.Query
 
 interface NewsApiServices {
 
-    @GET("everything")
-    suspend fun fetchEverything(
-        @Query("q") query: String,
-        @Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"
-    ): Response<NewsResponse<EverythingNewsItem>>
-
     @GET("top-headlines")
     suspend fun fetchTopArticles(
         @Query("country") country: String,
         @Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"
     ): Response<NewsResponse<TopArticlesNewsItem>>
 
+    @GET("everything")
+    suspend fun fetchEverything(
+        @Query("q") query: String,
+        @Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"
+    ): Response<NewsResponse<EverythingNewsItem>>
+
     @GET("top-headlines/sources")
-    suspend fun fetchSources(@Header("apiKey") k: String = "API_KEY",@Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"): Response<NewsResponse<SourcesNewItem>>
+    suspend fun fetchSources(
+        @Header("apiKey") k: String = "API_KEY",
+        @Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"
+    ): Response<NewsResponse<SourcesNewItem>>
 }

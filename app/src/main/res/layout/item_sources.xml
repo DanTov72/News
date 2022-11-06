@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="15dp"
-    app:cardCornerRadius="15dp">
+    app:cardCornerRadius="10dp">
 
 
     <LinearLayout
@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Jacob"
+            android:text="George Alagaya"
             android:textColor="@color/black"
             android:textSize="32sp" />
 
@@ -25,32 +25,29 @@
             android:id="@+id/tv_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:text="Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com."
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="13dp"
+            android:text="Since 3 December 2007, he has been the presenter of BBC News at Six, and previously was the main presenter of GMT on BBC World News since its launch on 1 February 2010."
             android:textColor="@color/black" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Eng"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="26sp" />
 
-            <TextView
-                android:id="@+id/tv_language"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:text="US"
-                android:textColor="@android:color/holo_red_light"
-                android:textSize="26sp" />
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginBottom="13dp"
+            android:text="Category"
+            android:textColor="@color/purple_200" />
 
-            <TextView
-                android:id="@+id/tv_category"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:text="Category"
-                android:textColor="@color/purple_200" />
-
-        </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

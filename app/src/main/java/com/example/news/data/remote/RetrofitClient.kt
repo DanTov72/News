@@ -25,7 +25,11 @@ class RetrofitClient {
         .build()
 
     private fun provideLoggingInterceptor() =
-        HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
+        HttpLoggingInterceptor()
+            .setLevel(
+                HttpLoggingInterceptor
+                    .Level.BODY
+            )
 
     fun provideNewsApiService() = retrofit.create(NewsApiServices::class.java)
 }
