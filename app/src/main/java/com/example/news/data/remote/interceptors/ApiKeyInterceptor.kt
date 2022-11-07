@@ -8,7 +8,7 @@ class ApiKeyInterceptor : Interceptor {
         var request = chain.request()
         val url =
             request.url.newBuilder()
-                .addQueryParameter("X-Api-Key", "45df755913c947ea82988b1dad81c6e7").build()
+                .addQueryParameter("X-Api-Key", "43f407381b4a44c595c6a05ba09ae0f7").build()
         request = request.newBuilder().url(url).build()
         return chain.proceed(request)
     }

@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_name"
+            android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -22,7 +22,7 @@
             android:textSize="32sp" />
 
         <TextView
-            android:id="@+id/tv_description"
+            android:id="@+id/textViewDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="13dp"
@@ -31,7 +31,7 @@
             android:textColor="@color/black" />
 
         <TextView
-            android:id="@+id/tv_language"
+            android:id="@+id/textViewLanguage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="13dp"
@@ -41,7 +41,7 @@
             android:textSize="26sp" />
 
         <TextView
-            android:id="@+id/tv_category"
+            android:id="@+id/textViewCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="13dp"

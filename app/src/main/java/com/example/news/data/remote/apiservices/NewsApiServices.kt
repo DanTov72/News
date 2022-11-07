@@ -14,19 +14,16 @@ interface NewsApiServices {
 
     @GET("top-headlines")
     suspend fun fetchTopArticles(
-        @Query("country") country: String,
-        @Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"
+        @Query("country") country: String
     ): Response<NewsResponse<TopArticlesNewsItem>>
 
     @GET("everything")
     suspend fun fetchEverything(
         @Query("q") query: String,
-        @Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"
     ): Response<NewsResponse<EverythingNewsItem>>
 
     @GET("top-headlines/sources")
     suspend fun fetchSources(
-        @Header("apiKey") k: String = "API_KEY",
-        @Header("X-Api-Key") key: String = "45df755913c947ea82988b1dad81c6e7"
+        @Header("apiKey") k: String = "API_KEY"
     ): Response<NewsResponse<SourcesNewItem>>
 }
